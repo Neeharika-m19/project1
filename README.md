@@ -38,22 +38,24 @@ project1/
 ├── package.json         # Dependencies and scripts
 └── README.md
 
+```
+
 ## 📦 Installation & Setup
 
-1.  **Clone the repository**
+1. **Clone the repository**
 
     ```bash
-    git clone [https://github.com/Neeharika-m19/project1.git](https://github.com/Neeharika-m19/project1.git)
+    git clone https://github.com/Neeharika-m19/project1.git
     cd project1
     ```
 
-2.  **Install dependencies**
+2. **Install dependencies**
 
     ```bash
     npm install
     ```
 
-3.  **Set up MongoDB**
+3. **Set up MongoDB**
 
     Make sure MongoDB is running locally at:
 
@@ -62,21 +64,23 @@ project1/
     ```
 
     Create a database named `hospitalInventory` with two collections:
-    * `hospital`
-    * `ventilators`
 
-    💡 You can add sample documents manually using MongoDB Compass or Mongo Shell.
+    - `hospital`
+    - `ventilators`
 
-4.  **Run the Servers**
+    > 💡 You can add sample documents manually using MongoDB Compass or Mongo Shell.
 
-    * **Main API Server** (port 1200)
+4. **Run the Servers**
 
-        ```bash
-        node index.js
-        ```
+    **Main API Server** (port 1200)
 
-    * **Auth/Login Server** (port 200)
+    ```bash
+    node index.js
+    ```
 
-        ```bash
-        node server.js
-        
+    **Auth/Login Server** (port 200)
+
+    ```bash
+    node server.js
+    ```
+```
