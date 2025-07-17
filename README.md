@@ -38,4 +38,3 @@ project1/
 ├── package.json         # Dependencies and scripts
 └── README.md
 
----
