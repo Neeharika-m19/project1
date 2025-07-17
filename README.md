@@ -38,6 +38,8 @@ project1/
 ├── package.json         # Dependencies and scripts
 └── README.md
 
+---
+
 ## 🔐 Authentication
 
 The API uses **JWT (JSON Web Token)** to protect routes.
@@ -53,6 +55,8 @@ For all subsequent requests to protected routes, include the token in the header
 
 ```http
 Authorization: Bearer <your_token_here>
+
+---
 
 ## 📦 Installation & Setup
 
