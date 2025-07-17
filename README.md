@@ -45,8 +45,8 @@ project1/
 1. **Clone the repository**
 
     ```bash
-    git clone https://github.com/Neeharika-m19/project1.git
-    cd project1
+    git clone https://github.com/Neeharika-m19/your-project-name.git
+    cd your-project-name
     ```
 
 2. **Install dependencies**
