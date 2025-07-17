@@ -83,3 +83,41 @@ project1/
     ```bash
     node server.js
     ```
+
+## 📡 API Endpoints
+
+> ⚠️ All endpoints (except `/login`) require the JWT token in the `Authorization` header.
+
+### 🔑 Auth
+
+| Method | Route    | Description                          |
+|--------|----------|--------------------------------------|
+| POST   | `/login` | Authenticate user and return a token |
+
+### 🏥 Hospital Routes
+
+| Method | Route               | Description                   |
+|--------|---------------------|-------------------------------|
+| GET    | `/hospitaldetails`  | Fetch all hospital records    |
+| POST   | `/searchhospital`   | Search hospitals by name      |
+
+### 🫁 Ventilator Routes
+
+| Method | Route                        | Description                         |
+|--------|------------------------------|-------------------------------------|
+| GET    | `/ventilatordetails`         | Get all ventilator records          |
+| POST   | `/searchventbystatus`        | Search ventilators by status        |
+| POST   | `/searchventbyname`          | Search ventilators by hospital name |
+| PUT    | `/updateventilator`          | Update ventilator status            |
+| POST   | `/addventilatorbyuser`       | Add a new ventilator record         |
+| DELETE | `/delete?vId=<vent_id>`      | Delete a ventilator record          |
+
+---
+
+## 🧠 Future Improvements
+
+- 🧑‍⚕️ Role-based access control (Admin, Doctor, Nurse)
+- 📊 Frontend dashboard with charts
+- 🧪 Unit & integration testing with Jest or Mocha
+- 🌐 Docker support for containerized deployment
+
