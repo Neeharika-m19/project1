@@ -38,3 +38,45 @@ project1/
 ├── package.json         # Dependencies and scripts
 └── README.md
 
+## 🔐 Authentication
+
+The API uses **JWT (JSON Web Token)** to protect routes.
+
+- **Login endpoint**: `POST /login`
+- **Sample credentials**:
+  - Username: `admin`
+  - Password: `password`
+
+A successful login returns a JWT token.
+
+For all subsequent requests to protected routes, include the token in the header:
+
+```http
+Authorization: Bearer <your_token_here>
+
+## 📦 Installation & Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Neeharika-m19/project1.git
+cd project1
+### 2. Install dependencies
+
+```bash
+npm install
+### 3. Setup MongoDB
+
+```bash
+Make sure MongoDb is running locally at: mongodb://127.0.0.1:27017
+Create a database named hospitalInventory with two collections:
+  -hospital
+ - ventilators
+
+### 4. Run The Servers
+
+```bash
+Main API Server(Port 1200)
+  -node index.js
+Auth/Login Server (port 200)
+  -node server.js
