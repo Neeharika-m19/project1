@@ -38,49 +38,45 @@ project1/
 ├── package.json         # Dependencies and scripts
 └── README.md
 
----
-
-## 🔐 Authentication
-
-The API uses **JWT (JSON Web Token)** to protect routes.
-
-- **Login endpoint**: `POST /login`
-- **Sample credentials**:
-  - Username: `admin`
-  - Password: `password`
-
-A successful login returns a JWT token.
-
-For all subsequent requests to protected routes, include the token in the header:
-
-```http
-Authorization: Bearer <your_token_here>
-
----
-
 ## 📦 Installation & Setup
 
-### 1. Clone the repository
+1.  **Clone the repository**
 
-```bash
-git clone https://github.com/Neeharika-m19/project1.git
-cd project1
-### 2. Install dependencies
+    ```bash
+    git clone [https://github.com/Neeharika-m19/project1.git](https://github.com/Neeharika-m19/project1.git)
+    cd project1
+    ```
 
-```bash
-npm install
-### 3. Setup MongoDB
+2.  **Install dependencies**
 
-```bash
-Make sure MongoDb is running locally at: mongodb://127.0.0.1:27017
-Create a database named hospitalInventory with two collections:
-  -hospital
- - ventilators
+    ```bash
+    npm install
+    ```
 
-### 4. Run The Servers
+3.  **Set up MongoDB**
 
-```bash
-Main API Server(Port 1200)
-  -node index.js
-Auth/Login Server (port 200)
-  -node server.js
+    Make sure MongoDB is running locally at:
+
+    ```bash
+    mongodb://127.0.0.1:27017
+    ```
+
+    Create a database named `hospitalInventory` with two collections:
+    * `hospital`
+    * `ventilators`
+
+    💡 You can add sample documents manually using MongoDB Compass or Mongo Shell.
+
+4.  **Run the Servers**
+
+    * **Main API Server** (port 1200)
+
+        ```bash
+        node index.js
+        ```
+
+    * **Auth/Login Server** (port 200)
+
+        ```bash
+        node server.js
+        
